@@ -1,4 +1,3 @@
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -9,9 +8,9 @@ import java.util.StringTokenizer;
 /**
  * Created by stendu on 1/31/2015.
  */
-public class WordCountMapper extends Mapper<LongWritable,Text,Text,IntWritable> {
+public class WordCountMapper extends Mapper<LongWritable,Text,Text,LongWritable> {
 
-    private static final IntWritable one = new IntWritable(1);
+    private static final LongWritable one = new LongWritable(1);
     private Text word = new Text();
 
     public void map(LongWritable Key,Text value, Context context )

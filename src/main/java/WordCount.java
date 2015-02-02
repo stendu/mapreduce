@@ -1,10 +1,14 @@
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+
+import java.util.Map;
+import java.util.TreeMap;
 
 
 /**
@@ -25,7 +29,9 @@ public class WordCount {
         job.setReducerClass(WordCountReducer.class);
 
         job.setOutputKeyClass(Text.class);
-        job.setOutputValueClass(IntWritable.class);
+        job.setOutputValueClass(LongWritable.class);
+
+        //job.setNumReduceTasks(1);
 
         System.exit(job.waitForCompletion(true)? 0:1);
     }
