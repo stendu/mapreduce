@@ -10,7 +10,7 @@ import java.util.TreeMap;
 /**
  * Created by stendu on 1/31/2015.
  */
-public class WordCountReducer extends Reducer<Text,LongWritable,Text,LongWritable> {
+public class WordCountReducer extends Reducer<Text,LongWritable,LongWritable,Text> {
     public void reduce(Text key, Iterable<LongWritable> values, Context context)
             throws IOException, InterruptedException
     {
@@ -19,7 +19,7 @@ public class WordCountReducer extends Reducer<Text,LongWritable,Text,LongWritabl
             sum = sum + val.get();
         }
 
-    context.write(key, new LongWritable(sum));
+    context.write(new LongWritable(sum),key);
     }
 
 }

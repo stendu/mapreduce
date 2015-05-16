@@ -1,8 +1,12 @@
+TrxnAvgReducer.class
 Test.class
 SortDescReducer.class
-WordCountMapper.class
-SortDescMapper.class
-WordCount.class
+TrxnAvgMapper2.class
 Globals.class
 WordCountReducer.class
 SortDesc.class
+WordCountMapper.class
+TrxnAvg.class
+SortDescMapper.class
+TrxnAvgMapper1.class
+WordCount.class

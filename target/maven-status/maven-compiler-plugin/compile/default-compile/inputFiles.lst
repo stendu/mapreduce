@@ -1,7 +1,11 @@
 F:\BDRE\mapreduce\src\main\java\Globals.java
+F:\BDRE\mapreduce\src\main\java\TrxnAvgMapper2.java
+F:\BDRE\mapreduce\src\main\java\TrxnAvgReducer.java
 F:\BDRE\mapreduce\src\main\java\WordCount.java
 F:\BDRE\mapreduce\src\main\java\SortDesc.java
 F:\BDRE\mapreduce\src\main\java\Test.java
+F:\BDRE\mapreduce\src\main\java\TrxnAvg.java
+F:\BDRE\mapreduce\src\main\java\TrxnAvgMapper1.java
 F:\BDRE\mapreduce\src\main\java\WordCountReducer.java
 F:\BDRE\mapreduce\src\main\java\SortDescMapper.java
 F:\BDRE\mapreduce\src\main\java\SortDescReducer.java
