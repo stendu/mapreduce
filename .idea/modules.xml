@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hiveFunctions/hiveFunctions.iml" filepath="$PROJECT_DIR$/hiveFunctions/hiveFunctions.iml" />
       <module fileurl="file://$PROJECT_DIR$/mapreduce.iml" filepath="$PROJECT_DIR$/mapreduce.iml" />
     </modules>
   </component>
